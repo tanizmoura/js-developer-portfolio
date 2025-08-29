@@ -37,11 +37,9 @@
 .portfolio a {
     border-left: .5rem solid #46478b;
     display: flex;
-    max-width: 10rem;
     text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
-    text-transform: uppercase;
     text-align: center;
 }
 
