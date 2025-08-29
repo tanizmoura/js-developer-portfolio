@@ -45,25 +45,28 @@ async function showLanguages(profileInformation, profileData) {
 
 async function showPortfolio(profileInformation, profileData) {
     profileInformation.portfolio.innerHTML = profileData.portfolio.map((item) =>
-        `<h3>${item.nome}</h3> 
+        `<h3 class="title github">${item.nome}</h3> 
         <p>${item.descricao}</p>
         <a href="${item.gitHub}">Repositório</a>
         <a href="${item.site}">Site no ar</a>
         `
     ).join('')
-    console.log(profileData.portfolio)
+}
+
+function showCertification(item) {
+    const certificados = item.map((certificado) => `<a href="${certificado.link}">${certificado.nome}</a>`)
+    return certificados.join('')
 }
 
 async function showEducation(profileInformation, profileData) {
-    profileInformation.education.innerHTML = profileData.portfolio.map((item) =>
-        `<h3>${item.nome}</h3> 
-        <p>${item.descricao}</p>
-        <a href="${item.gitHub}">Repositório</a>
-        <a href="${item.site}">Site no ar</a>
-        `
+    profileInformation.education.innerHTML = profileData.educacao.map((item) =>
+        `<h3>${item.nome}</h3>
+        <span>${item.instituicao}</span>
+        <span>Período: ${item.periodo.inicio} - ${item.periodo.fim}</span>
+        ${item.certificados ? `<h4>Certificados</h4> ${showCertification(item.certificados)}` : ``}     `
     ).join('')
-    console.log(profileData.portfolio)
 }
+
 
 (async () => {
     const profileData = await fetchProfileData()
