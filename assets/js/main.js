@@ -9,7 +9,8 @@ async function createProfile() {
     softSkills: document.getElementById('soft-skills'),
     languages: document.getElementById('languages'),
     portfolio: document.getElementById('portfolio'),
-    education: document.getElementById('education')
+    education: document.getElementById('education'),
+    photo: document.getElementById('photo')
     }
 
     return profileInformation
@@ -17,12 +18,13 @@ async function createProfile() {
 
 async function showBasicInformations(profileInformation, profileData) {
     profileInformation.name.innerText = `Olá, \n eu sou ${profileData.nome}`
-    profileInformation.job.innerText = `${profileData.titulo}`
+    profileInformation.job.innerText = profileData.titulo
     profileInformation.location.innerText = `${profileData.localidade.cidade} - ${profileData.localidade.estado}`
     profileInformation.phone.innerText = `(${profileData.telefone.ddd}) ${profileData.telefone.numero}`
     profileInformation.phone.href = `https://wa.me/55${profileData.telefone.ddd}${profileData.telefone.numero}`
-    profileInformation.email.innerText = `${profileData.email}`
+    profileInformation.email.innerText = profileData.email
     profileInformation.email.href = `mailto:${profileData.email}`
+    profileInformation.photo.src = profileData.photo
 }
 
 async function showSoftSkills(profileInformation, profileData) {
@@ -45,10 +47,18 @@ async function showLanguages(profileInformation, profileData) {
 
 async function showPortfolio(profileInformation, profileData) {
     profileInformation.portfolio.innerHTML = profileData.portfolio.map((item) =>
-        `<h3 class="title github">${item.nome}</h3> 
+        `<li><h3>${item.nome}</h3> 
+        <img src="${item.img}" class="portfolio-img" alt="${item.img}">
         <p>${item.descricao}</p>
         <a href="${item.gitHub}">Repositório</a>
-        <a href="${item.site}">Site no ar</a>
+        <a href="${item.site}">Site no ar</a></li>
+        `
+    ).join('')
+}
+
+async function showSkills(profileInformation, profileData) {
+    profileInformation.skills.innerHTML = profileData.skills.hardSkills.map((item) =>
+        ` <li><img src="${item.logo}" alt="${item.nome}" title="${item.nome}"></li>
         `
     ).join('')
 }
@@ -77,6 +87,7 @@ async function showEducation(profileInformation, profileData) {
     await showLanguages(profileInformation, profileData)
     await showPortfolio(profileInformation, profileData)
     await showEducation(profileInformation, profileData)
+    await showSkills(profileInformation, profileData)
     
 
 

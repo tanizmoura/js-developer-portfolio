@@ -27,10 +27,10 @@
 <body>
     <main class="main">
         <header class="header">
-            <img src="assets/img/my-photo.jpeg" alt="Foto de Renan J Paula" class="photo">
+            <img id="photo" alt="Foto de Tanise Moura" class="photo">
 
             <h1 class="title" id="name">
-                
+
             </h1>
 
             <div class="information">
@@ -55,18 +55,6 @@
                     <section class="tools">
                         <h3>Ferramentas:</h3>
                         <ul id="skills">
-                            <li>
-                                <img src="assets/img/icons/tools/nodejs.svg" alt="Nodejs" title="Nodejs">
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/tools/react.svg" alt="React" title="React">
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/tools/git.svg" alt="GIT" title="GIT">
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/tools/java.svg" alt="Java" title="Java">
-                            </li>
                         </ul>
                     </section>
 
@@ -90,7 +78,7 @@
             </div>
         </section>
 
-        <section class="acordeon"> 
+        <section class="acordeon">
             <button class="trigger" type="button">
                 <h2>Educação</h2>
             </button>
@@ -111,10 +99,14 @@
                 <ul class="portfolio" id="portfolio">
 
                 </ul>
-                <a href="https://github.com/tanizmoura?tab=repositories">Ver mais...</a>
+                <a href="https://github.com/tanizmoura?tab=repositories" class="more">Ver mais...</a>
             </div>
         </section>
+        <footer>
+            <a href="https://web.dio.me/"><img src="assets/img/icons/dio.svg" alt="Dio logo"></a>
+        </footer>
     </main>
+
 
     <script src="assets/js/acordeon.js"></script>
     <script src="assets/js/api.js"></script>

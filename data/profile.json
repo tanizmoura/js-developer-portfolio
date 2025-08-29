@@ -6,6 +6,7 @@
     "estado": "RS",
     "pais": "Brasil"
   },
+  "photo": "https://raw.githubusercontent.com/tanizmoura/js-developer-portfolio/refs/heads/main/assets/img/my-photo.jpeg",
   "telefone": {
     "ddd": "51",
     "numero":"985200476"
@@ -15,15 +16,19 @@
     "hardSkills": [
       {
         "nome": "Html5",
-        "logo": "TODO"
+        "logo": "https://raw.githubusercontent.com/tanizmoura/js-developer-portfolio/ffea9013ad4c56e367a9cec68cd9e45d22068eb9/assets/img/icons/tools/html5.svg"
       },
       {
         "nome": "CSS3",
-        "logo": "TODO"
+        "logo": "https://raw.githubusercontent.com/tanizmoura/js-developer-portfolio/ffea9013ad4c56e367a9cec68cd9e45d22068eb9/assets/img/icons/tools/css3.svg"
       },
       {
         "nome": "JavaScript",
-        "logo": "TODO"
+        "logo": "https://raw.githubusercontent.com/tanizmoura/js-developer-portfolio/ffea9013ad4c56e367a9cec68cd9e45d22068eb9/assets/img/icons/tools/js.svg"
+      },
+      {
+        "nome": "Github",
+        "logo": "https://raw.githubusercontent.com/tanizmoura/js-developer-portfolio/ffea9013ad4c56e367a9cec68cd9e45d22068eb9/assets/img/icons/tools/github.svg"
       }
     ],
     "softSkills": [
@@ -79,25 +84,29 @@
       "nome": "Nikel",
       "descricao": "Simula um sistema de registros financeiros onde é possível fazer um cadastro simples para poder salvar entradas e saídas.",
       "gitHub": "https://github.com/tanizmoura/Projeto-Nikel",
-      "site": "https://tanizmoura.github.io/Projeto-Nikel/"
+      "site": "https://tanizmoura.github.io/Projeto-Nikel/",
+      "img": "https://raw.githubusercontent.com/tanizmoura/Projeto-Nikel/refs/heads/main/assets/images/preview.png"
     },
     {
       "nome": "Pokedéx",
       "descricao": "Representação de pokedéx manipulando elementos de uma API e elementos do DOM.",
       "gitHub": "https://github.com/tanizmoura/Pokedex",
-      "site": "https://tanizmoura.github.io/Pokedex/"
+      "site": "https://tanizmoura.github.io/Pokedex/",
+      "img": "https://raw.githubusercontent.com/tanizmoura/Pokedex/refs/heads/main/assets/img/preview.png"
     },
     {
       "nome": "Yugioh Jo-Ken-Po",
       "descricao": "Jogo de Jokenpo com temática de Yu-Gi-Oh criado durante o módulo de javascript avançado do Bootcamp Santander Front-End 2025.",
       "gitHub": "https://github.com/tanizmoura/yugioh-jokenpo",
-      "site": "https://tanizmoura.github.io/yugioh-jokenpo/"
+      "site": "https://tanizmoura.github.io/yugioh-jokenpo/",
+      "img":"https://raw.githubusercontent.com/tanizmoura/yugioh-jokenpo/refs/heads/main/src/preview.png"
     },
     {
       "nome": "Discord Clone",
       "descricao": "Cópia da página do Discord usando os conhecimentos adquiridos no módulo de responsividade.",
       "gitHub": "https://github.com/tanizmoura/clone_discord",
-      "site": "https://tanizmoura.github.io/clone_discord/"
+      "site": "https://tanizmoura.github.io/clone_discord/",
+      "img":"https://raw.githubusercontent.com/tanizmoura/clone_discord/refs/heads/main/assets/img/preview.png"
     }
   ]
 }
